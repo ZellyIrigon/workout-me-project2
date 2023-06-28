@@ -1,0 +1,118 @@
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 0%, rgba(227, 255, 248, 0.38) 100%);/*aqui
+  tem a cor de fundo da tela. Quando quiser gerar um backgroud procura em css gradient generator e brinca com as cores.*/
+
+  min-height: 100vh;
+}
+
+.page {
+  
+  width: 1000px;
+  margin: 0 auto;
+  padding: 65px;
+
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+#logo {
+  color: #89C5CC;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+h1 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 49px;
+  font-weight: normal; /*remove o negrito*/
+  line-height: 56px;
+  color: #1F1534;
+  width: 490px; /*aqui é mesmo que fazer um <br> no html, para quebrar a linha.*/
+}
+h1 span {
+  color:#89C5CC;
+  font-weight: bold;
+}
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+  width: 420px;
+
+  margin: 40px 0; /*adicionei espaço entre os textos, com 40 para top e bottom e 0 para as laterais*/
+}
+
+ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+}
+a {
+  color: #1F1534;
+  text-decoration: none;
+}
+
+ul li a {
+  opacity: 0.5;
+}
+ul li a:hover{ /*quando passar o mouse em cima, vai ficar bold*/
+  font-weight: bold;
+  opacity: 1;
+}
+
+main {
+  display: flex; /*faz com que as imagens e o texto dentro da caixa main fiquem um ao lado do outro*/
+  align-items: center; /*coloca os items, dentro do display flex, na mesma linha*/
+  justify-content: space-between;/*nesse caso cada elemento foi para uma extremidade da página*/
+}
+button {
+  text-transform: uppercase;
+  color:  #F9F9F9;
+
+  background: #69B99D;
+  border: none;
+  padding: 14px 32px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap:10px; /*é a distância entre os elementos dentro do button*/
+  font-weight: bold;
+
+  border-radius:4px; /*trabalha o arredondamento aos cantos do button*/
+
+  cursor: pointer; /*aparece uma "maozinha" quando passa o cursor em cima do button*/
+}
+
+button:hover{
+  background:#4f947c; /*ao passar o mouse em cima do button ele fica um pouco mais escuro*/
+}
+
+footer {
+  font-size: 14px;
+  color: #000;
+    
+  text-align: center;
+}
+footer a {
+  font-weight: bold;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
